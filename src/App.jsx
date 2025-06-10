@@ -299,25 +299,61 @@ function App() {
 
 					{/* Mobile Navigation */}
 					{isMenuOpen && (
-						<motion.div className="md:hidden" initial={{ opacity: 0, y: -10 }} animate={{ opacity: 1, y: 0 }}>
-							<div className="px-2 pt-2 pb-3 space-y-1 bg-slate-800 rounded-lg mt-2">
-								<a href="#features" className="block px-3 py-2 text-slate-300 hover:text-white">
-									Features
-								</a>
-								<a href="#how-it-works" className="block px-3 py-2 text-slate-300 hover:text-white">
-									How It Works
-								</a>
-								<a href="#use-cases" className="block px-3 py-2 text-slate-300 hover:text-white">
-									Use Cases
-								</a>
-								<a href="#platforms" className="block px-3 py-2 text-slate-300 hover:text-white">
-									Platforms
-								</a>
-								<button className="w-full text-left bg-primary hover:bg-primary-dark text-white px-3 py-2 rounded-lg">
-									Join Waitlist
-								</button>
+						<div className="md:hidden" initial={{ opacity: 0, y: -10 }} animate={{ opacity: 1, y: 0 }}>
+							<div className="absolute top-full left-0 right-0 mt-2 mx-4 bg-slate-800/95 backdrop-blur-lg border border-slate-700/50 rounded-2xl shadow-2xl shadow-black/20 overflow-hidden">
+								<div className="py-6">
+									<a
+										href="#features"
+										className="block px-6 py-4 text-slate-300 hover:text-white hover:bg-slate-700/50 transition-all duration-200 border-b border-slate-700/30 last:border-b-0"
+										onClick={() => setIsMenuOpen(false)}
+									>
+										<div className="flex items-center space-x-3">
+											<div className="w-2 h-2 bg-primary/60 rounded-full"></div>
+											<span className="font-medium">Features</span>
+										</div>
+									</a>
+									<a
+										href="#how-it-works"
+										className="block px-6 py-4 text-slate-300 hover:text-white hover:bg-slate-700/50 transition-all duration-200 border-b border-slate-700/30 last:border-b-0"
+										onClick={() => setIsMenuOpen(false)}
+									>
+										<div className="flex items-center space-x-3">
+											<div className="w-2 h-2 bg-primary/60 rounded-full"></div>
+											<span className="font-medium">How It Works</span>
+										</div>
+									</a>
+									<a
+										href="#use-cases"
+										className="block px-6 py-4 text-slate-300 hover:text-white hover:bg-slate-700/50 transition-all duration-200 border-b border-slate-700/30 last:border-b-0"
+										onClick={() => setIsMenuOpen(false)}
+									>
+										<div className="flex items-center space-x-3">
+											<div className="w-2 h-2 bg-primary/60 rounded-full"></div>
+											<span className="font-medium">Use Cases</span>
+										</div>
+									</a>
+									<a
+										href="#platforms"
+										className="block px-6 py-4 text-slate-300 hover:text-white hover:bg-slate-700/50 transition-all duration-200 border-b border-slate-700/30 last:border-b-0"
+										onClick={() => setIsMenuOpen(false)}
+									>
+										<div className="flex items-center space-x-3">
+											<div className="w-2 h-2 bg-primary/60 rounded-full"></div>
+											<span className="font-medium">Platforms</span>
+										</div>
+									</a>
+									<div className="px-6 pt-4">
+										<button
+											className="w-full bg-gradient-to-r from-primary to-primary-light hover:from-primary-dark hover:to-primary text-white py-4 rounded-xl font-semibold flex items-center justify-center space-x-2 transition-all duration-200 shadow-lg hover:shadow-xl"
+											onClick={() => setIsMenuOpen(false)}
+										>
+											<Bell className="w-5 h-5" />
+											<span>Join Waitlist</span>
+										</button>
+									</div>
+								</div>
 							</div>
-						</motion.div>
+						</div>
 					)}
 				</div>
 			</nav>
