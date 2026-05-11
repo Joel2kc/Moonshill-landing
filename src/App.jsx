@@ -383,7 +383,7 @@ function App() {
 							animate={{ opacity: 1, y: 0 }}
 							transition={{ delay: 0.3 }}
 						>
-							<span className="block sm:inline">Automate the Hype!</span>
+							<span className="block sm:inline">Automate the Hype.</span>
 							<br className="hidden sm:block" />
 							<span className="block sm:inline">
 								<span className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-blue-400 to-primary-light">
