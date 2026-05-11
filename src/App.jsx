@@ -634,7 +634,7 @@ function App() {
 						<h2 className="text-4xl font-bold text-white mb-4">Perfect for Every Web3 Campaign</h2>
 						<p className="text-xl text-slate-300 max-w-3xl mx-auto">
 							Whether you're launching a token, growing your community, or making market moves, MoonShill adapts to your
-							specific needs
+							specific need
 						</p>
 					</motion.div>
 
