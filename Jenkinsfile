@@ -17,19 +17,19 @@ pipeline {
 
         stage('Install Dependencies') {
             steps {
-                sh '/usr/local/bin/npm install'
+                sh 'npm install'
             }
         }
 
         stage('Lint Check') {
             steps {
-                sh '/usr/local/bin/npm run lint'
+                sh 'npm run lint'
             }
         }
 
         stage('Build Application') {
             steps {
-                sh '/usr/local/bin/npm run build'
+                sh 'npm run build'
             }
         }
 
