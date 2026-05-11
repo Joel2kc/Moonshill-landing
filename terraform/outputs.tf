@@ -7,3 +7,8 @@ output "acr_login_server" {
   description = "Azure Container Registry login server URL"
   value       = azurerm_container_registry.acr.login_server
 }
+
+output "app_url" {
+  description = "Stable URL to access the application"
+  value       = azurerm_container_group.webapp.fqdn
+}

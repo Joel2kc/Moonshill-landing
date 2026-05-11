@@ -40,6 +40,7 @@ resource "azurerm_container_group" "webapp" {
   location            = azurerm_resource_group.main.location
   resource_group_name = azurerm_resource_group.main.name
   ip_address_type     = "Public"
+  dns_name_label      = "moonshill-webapp"
   os_type             = "Linux"
 
   container {
